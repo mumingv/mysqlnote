@@ -1,5 +1,14 @@
 # FAQ
 
+
+## 建表语句中各字段的含义？
+
+#### 参考资料
+
+- [博客：Mysql中数据类型括号中的数字代表的含义](https://blog.csdn.net/qq_31648761/article/details/78270567)
+- [博客：MySQL 字段约束 null,not null,default,auto_increment](http://www.xiaoxiaozi.com/2009/07/09/1111/)
+
+
 ## Mysql搭建了两套数据库分别使用不同的端口，如何在启动第二套数据库时制定配置文件？
 
 第一套数据库启动时，使用`--defaults-file`参数指定配置文件；第二套数据库启动时，需要使用`--defaults-extra-file`参数指定配置文件。如下所示：
@@ -54,4 +63,6 @@ mysql> select * from datedemo;
 | 2018-03-29 17:14:49 | 2018-03-29 19:14:49 |
 +---------------------+---------------------+
 ```
+
+
 

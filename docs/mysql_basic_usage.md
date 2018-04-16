@@ -171,6 +171,25 @@ Query OK, 0 rows affected (0.15 sec)
 
 参考官方文档：[数据类型](http://dev.mysql.com/doc/refman/5.6/en/data-types.html)。
 
+可以使用如下命令查询某个数据表的创建命令。
+
+```sql
+mysql> SHOW CREATE TABLE `tb_user`\G
+*************************** 1. row ***************************
+       Table: tb_user
+Create Table: CREATE TABLE `tb_user` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT COMMENT '用户ID',
+  `username` varchar(50) NOT NULL COMMENT '用户名',
+  `permission_r` bigint(20) unsigned NOT NULL COMMENT '读权限，每个bit标记一个模块的权限',
+  `permission_w` bigint(20) unsigned NOT NULL COMMENT '写权限，每个bit标记一个模块的权限',
+  `is_admin` tinyint(2) unsigned NOT NULL DEFAULT '0' COMMENT '是否为管理员 0：否； 1：是',
+  `is_del` tinyint(2) unsigned NOT NULL DEFAULT '0' COMMENT '是否删除 0：否； 1：是',
+  `create_time` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '创建时间',
+  `update_time` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '修改时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COMMENT='用户表'
+1 row in set (0.00 sec)
+```
 
 ### 数据表删除(D)
 
