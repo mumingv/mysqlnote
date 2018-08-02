@@ -14,6 +14,9 @@
 - [参考资料](#docs/mysql_reference)
 - [FAQ](#docs/mysql_faq)
 
+## 读书笔记
+- [《MySQL必知必会》](#docs/book/mysql_crash_course)
+
 ## 附录 
 - [源码](https://github.com/mumingv/gitreposity)
 - [修订历史](https://github.com/mumingv/gitreposity/commits/master)
