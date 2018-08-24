@@ -56,5 +56,10 @@ RUNCATE TABLE think_data;
 ```
 
 
+## 操作 - 字段值基于原始值变化
+
+```
+UPDATE tb_growth_user SET growth_value = growth_value + 100 WHERE (is_del = 0) AND (user_id = '31100686');
+```
 
 
