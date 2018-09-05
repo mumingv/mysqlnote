@@ -36,6 +36,13 @@ ALTER TABLE think_data ADD status tinyint(2) NOT NULL DEFAULT '0' COMMENT '状�
 ```
 
 
+## 表 - 删除字段
+
+```
+ALTER TABLE `tb_growth_user_main_task_history` DROP `task_circle_times`;
+```
+
+
 ## 表 - 增加记录
 
 ```
