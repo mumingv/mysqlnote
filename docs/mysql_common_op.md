@@ -45,8 +45,27 @@ ALTER TABLE `tb_growth_user_main_task_history` DROP `task_circle_times`;
 
 ## 表 - 增加索引
 
+增加单个索引
+
 ```
 ALTER TABLE `tb_main_task` ADD INDEX (`task_category`);
+```
+
+增加多个索引
+
+```
+ALTER TABLE `tb_main_task`
+ADD INDEX (`task_category`),
+ADD INDEX (`create_user`),
+ADD INDEX (`status`),
+ADD INDEX (`is_del`);
+```
+
+
+## 表 - 删除索引
+
+```
+ALTER TABLE `tb_main_task` DROP INDEX `task_category`;
 ```
 
 
