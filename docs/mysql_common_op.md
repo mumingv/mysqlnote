@@ -43,6 +43,13 @@ ALTER TABLE `tb_growth_user_main_task_history` DROP `task_circle_times`;
 ```
 
 
+## 表 - 增加索引
+
+```
+ALTER TABLE `tb_main_task` ADD INDEX (`task_category`);
+```
+
+
 ## 表 - 增加记录
 
 ```
