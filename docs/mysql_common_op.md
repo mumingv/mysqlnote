@@ -21,6 +21,19 @@ CREATE TABLE IF NOT EXISTS `think_data`(
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
 ```
 
+## 表 - 清空表
+
+```
+TRUNCATE tb_main_task;
+```
+
+
+## 表 - 删除表
+
+```
+DROP TABLE tb_main_task;
+```
+
 
 ## 表 - 修改表名
 
