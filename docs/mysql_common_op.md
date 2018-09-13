@@ -109,3 +109,28 @@ UPDATE tb_growth_user SET growth_value = growth_value + 100 WHERE (is_del = 0) A
 ```
 
 
+## 权限 - 增加权限
+
+账号在所有机器上登录都具有所有操作权限
+
+```
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
+```
+
+
+## 权限 - 查看权限
+
+查看账号在所有机器上登录都具有的操作权限
+
+```
+mysql> show grants for root@'%';
++-------------------------------------------------------------+
+| Grants for root@%                                           |
++-------------------------------------------------------------+
+| GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION |
++-------------------------------------------------------------+
+1 row in set (0.00 sec)
+```
+
+
+
