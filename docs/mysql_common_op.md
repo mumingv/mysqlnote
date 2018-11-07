@@ -44,8 +44,16 @@ RENAME TABLE `tb_user2` TO `tb_user`;
 
 ## 表 - 增加字段
 
+**在所有表字段之后增加字段**
+
 ```
 ALTER TABLE think_data ADD status tinyint(2) NOT NULL DEFAULT '0' COMMENT '状态';
+```
+
+**在特定字段之后增加字段**
+
+```
+ALTER TABLE `tb_growth_user_sub_task_history` ADD `appid` VARCHAR(128) NOT NULL DEFAULT '' COMMENT  'appid' AFTER  `query`;
 ```
 
 
