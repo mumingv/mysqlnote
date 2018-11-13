@@ -82,6 +82,12 @@ ADD INDEX (`status`),
 ADD INDEX (`is_del`);
 ```
 
+增加联合索引
+
+```
+ALTER TABLE `tb_demo` ADD INDEX idx_task_id_user_id(`task_id`, `user_id`);
+```
+
 
 ## 表 - 删除索引
 
