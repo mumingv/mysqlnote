@@ -14,6 +14,7 @@
 - [函数](#docs/mysql_function)
 - [参考资料](#docs/mysql_reference)
 - [FAQ](#docs/mysql_faq)
+- [环境FAQ](#docs/mysql_faq_env)
 
 ## 读书笔记
 - [《MySQL必知必会》](#docs/book/mysql_crash_course)
