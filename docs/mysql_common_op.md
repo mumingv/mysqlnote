@@ -56,6 +56,15 @@ ALTER TABLE think_data ADD status tinyint(2) NOT NULL DEFAULT '0' COMMENT '状�
 ALTER TABLE `tb_growth_user_sub_task_history` ADD `appid` VARCHAR(128) NOT NULL DEFAULT '' COMMENT  'appid' AFTER  `query`;
 ```
 
+**在特定字段之后增加多个字段**
+
+```
+ALTER TABLE `tb_growth_user`
+ADD `name` VARCHAR( 32 ) NOT NULL DEFAULT '' COMMENT '姓名（邮寄商品使用）' AFTER `is_push`,
+ADD `tel` VARCHAR( 32 ) NOT NULL DEFAULT '' COMMENT '电话（邮寄商品使用）' AFTER `name`,
+ADD `addr_region` VARCHAR( 256 ) NOT NULL DEFAULT '' COMMENT '区域地址（邮寄商品使用）' AFTER `tel`,
+ADD `addr_detail` VARCHAR( 256 ) NOT NULL DEFAULT '' COMMENT '详细地址（邮寄商品使用）' AFTER `addr_region`;
+```
 
 ## 表 - 删除字段
 

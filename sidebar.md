@@ -7,6 +7,11 @@
 ## 目录
 0. [前言](#README)
 
+## Mac
+
+- [安装-dmg方式](#docs/mac/install)
+
+
 ## MySQL
 - [基本用法](#docs/mysql_basic_usage)
 - [常用操作](#docs/mysql_common_op)
