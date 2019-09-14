@@ -11,7 +11,7 @@
 
 ## Mac
 
-- [安装-dmg方式](#docs/mac/install)
+- [安装-dmg方式](#docs/mac/install_dmg)
 
 
 ## MySQL
